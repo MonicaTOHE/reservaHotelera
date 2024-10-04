@@ -1,0 +1,23 @@
+{
+  "name": "reservahotelera",
+  "version": "1.0.0",
+  "description": "Proyecto de reserva hotelera",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MonicaTOHE/reservaHotelera.git"
+  },
+  "author": "Monica Henriquez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MonicaTOHE/reservaHotelera/issues"
+  },
+  "homepage": "https://github.com/MonicaTOHE/reservaHotelera#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  }
+}

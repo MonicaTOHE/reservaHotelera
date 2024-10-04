@@ -1,0 +1,274 @@
+{
+	"info": {
+		"_postman_id": "07354bf0-6892-4469-af43-5bd4eb45aa7d",
+		"name": "proyecto reserva",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38360980"
+	},
+	"item": [
+		{
+			"name": "crearReserva",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tipo\": \"lujo\",\r\n    \"inicio\": \"\",\r\n    \"fin\": \"\",\r\n    \"adultos\": 3,\r\n    \"ninos\": 2,\r\n    \"pagado\": true,\r\n    \"hotel\" : \"hotel paraiso\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/reservas",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"reservas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtenerReserva",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/reservas/2",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"reservas",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "actualizarReserva",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tipo\": \"lujo\",\r\n    \"inicio\": \"\",\r\n    \"fin\": \"\",\r\n    \"adultos\": 3,\r\n    \"ninos\": 2,\r\n    \"pagado\": true,\r\n    \"hotel\" : \"hotel paraiso\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/reservas/2",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"reservas",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminarReserva",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/reservas/5000",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"reservas",
+						"5000"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "reservaMesSiguiente",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/reservas/consulta-mes-siguiente/filtro?hotel=paraiso",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"reservas",
+						"consulta-mes-siguiente",
+						"filtro"
+					],
+					"query": [
+						{
+							"key": "hotel",
+							"value": "paraiso"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "buscarPorFechas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/reservas/buscar/fecha?inicio=2024/10/22&fin=2024/12/26&hotel=paraiso",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"reservas",
+						"buscar",
+						"fecha"
+					],
+					"query": [
+						{
+							"key": "inicio",
+							"value": "2024/10/22"
+						},
+						{
+							"key": "fin",
+							"value": "2024/12/26"
+						},
+						{
+							"key": "hotel",
+							"value": "paraiso"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "buscarPorHabitacion",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/reservas/buscar/fecha?inicio=2024/10/22&fin=2024/12/26&hotel=paraiso",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"reservas",
+						"buscar",
+						"fecha"
+					],
+					"query": [
+						{
+							"key": "inicio",
+							"value": "2024/10/22"
+						},
+						{
+							"key": "fin",
+							"value": "2024/12/26"
+						},
+						{
+							"key": "hotel",
+							"value": "paraiso"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "estadoPago",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/reservas/buscar/fecha?inicio=2024/10/22&fin=2024/12/26&hotel=paraiso",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"reservas",
+						"buscar",
+						"fecha"
+					],
+					"query": [
+						{
+							"key": "inicio",
+							"value": "2024/10/22"
+						},
+						{
+							"key": "fin",
+							"value": "2024/12/26"
+						},
+						{
+							"key": "hotel",
+							"value": "paraiso"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "filtrarHuespedesPorCantidadMayor",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/reservas/buscar/fecha?inicio=2024/10/22&fin=2024/12/26&hotel=paraiso",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"reservas",
+						"buscar",
+						"fecha"
+					],
+					"query": [
+						{
+							"key": "inicio",
+							"value": "2024/10/22"
+						},
+						{
+							"key": "fin",
+							"value": "2024/12/26"
+						},
+						{
+							"key": "hotel",
+							"value": "paraiso"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
