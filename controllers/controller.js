@@ -198,20 +198,6 @@ function existeId(id) {
   return reservasGuardadas.some((elementoActual) => elementoActual.id == id);
 }
 
-function filtrarPorRangoDeFechas() {
-  // reservasGuardadas.filter(()=>)
-}
-
-function filtrarPorRangoDeFechas(startDate, endDate, checkDate) {
-  // Convertimos las cadenas de texto a objetos Date
-  const start = new Date(startDate);
-  const end = new Date(endDate);
-  const check = new Date(checkDate);
-
-  // Comprobamos si la fecha está dentro del rango (inclusiva)
-  return check >= start && check <= end;
-}
-
 function mesSiguiente() {
   const fechaActual = new Date();
 
